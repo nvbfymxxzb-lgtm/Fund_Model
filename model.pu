@@ -63,3 +63,90 @@ def calculate_distributions(total_called: float, target_moic: float, holding_per
         distributions[y] = (distributions[y] / total_weight) * total_value
 
     return distributions
+
+def calculate_irr(cash_flows: List[float], max_iterations: int = 500, tolerance: float = 0.01) -> float:
+    """
+    Robust bisection method for IRR. Returns IRR as a percentage.
+    """
+    if all(cf >= 0 for cf in cash_flows) or all(cf <= 0 for cf in cash_flows):
+        return float("nan")
+
+    low = -0.99
+    high = 3.0
+
+    def npv(rate: float) -> float:
+        total = 0.0
+        denom = 1.0
+        for t, cf in enumerate(cash_flows):
+            if t == 0:
+                denom = 1.0
+            else:
+                denom *= (1.0 + rate)
+            total += cf / denom
+        return total
+
+    npv_low = npv(low)
+    npv_high = npv(high)
+    attempts = 0
+    while npv_low * npv_high > 0 and attempts < 10:
+        high += 1.0
+        npv_high = npv(high)
+        attempts += 1
+
+    for _ in range(max_iterations):
+        irr = (low + high) / 2.0
+        v = npv(irr)
+        if abs(v) < tolerance:
+            return irr * 100.0
+        if v > 0.0:
+            low = irr
+        else:
+            high = irr
+        if abs(high - low) < 1e-5:
+            break
+    return ((low + high) / 2.0) * 100.0
+
+
+def build_cash_flows(commitment: float, target_moic: float, holding_period: int) -> Tuple[list, float, float]:
+    """
+    Build investor net cash flows including calls and distributions.
+    """
+    call_schedule = [0.0, 0.15, 0.30, 0.35, 0.20]  # Years 0–4
+    total_called = sum(commitment * call_schedule[i] for i in range(1, 5))
+    distributions = calculate_distributions(total_called, target_moic, holding_period)
+
+    last_year = max(4, max(distributions.keys()) if distributions else 4)
+    horizon_years = last_year + 1
+
+    cash_flows = []
+    for year in range(horizon_years + 1):
+        net_cf = 0.0
+        if 1 <= year <= 4:
+            net_cf -= commitment * call_schedule[year]
+        if year in distributions:
+            net_cf += distributions[year]
+        cash_flows.append(net_cf)
+
+    total_distributions = sum(distributions.values())
+    return cash_flows, total_called, total_distributions
+
+
+def validate_inputs(target_moic: float, holding_period: int):
+    """
+    Validate and clamp inputs into feasible modeling ranges.
+    """
+    warnings = []
+    if target_moic < 1.2:
+        warnings.append("MOIC too low – minimum 1.2x")
+        target_moic = 1.2
+    if target_moic > 5.0:
+        warnings.append("MOIC capped at 5.0x")
+        target_moic = 5.0
+    if holding_period < 5:
+        warnings.append("Holding period minimum 5 years")
+        holding_period = 5
+    if holding_period > 12:
+        warnings.append("Holding period maximum 12 years")
+        holding_period = 12
+    return target_moic, holding_period, warnings
+
