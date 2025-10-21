@@ -1,0 +1,9 @@
+"""
+presets.py – Scenario presets for the PE portfolio model.
+"""
+
+PRESETS = {
+    "Conservative": {"target_moic": 2.0, "holding_period": 10, "commitment": 700_000_000},
+    "Base Case":    {"target_moic": 2.5, "holding_period": 8,  "commitment": 700_000_000},
+    "Aggressive":   {"target_moic": 3.2, "holding_period": 7,  "commitment": 700_000_000},
+}
