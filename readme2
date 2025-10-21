@@ -1,0 +1,8 @@
+# PE Portfolio Model
+
+Professional-grade Private Equity Portfolio Model built in Python with Streamlit.
+
+### Run locally
+```bash
+pip install -r requirements.txt
+streamlit run app.py
