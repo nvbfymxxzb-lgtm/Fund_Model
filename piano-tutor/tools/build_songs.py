@@ -90,7 +90,7 @@ song("brahms-lullaby", 3, "Lullaby (Wiegenlied)", "Johannes Brahms, arr.",
 
 song("greensleeves", 3, "Greensleeves", "Traditional (16th century), arr.",
      "A minor-key tune in six-eight time, with the long–short–long lilt that this meter is known for. Watch for the G sharp and F sharp.",
-     ["m.compoundMeter", "m.minorKeys", "p.legato"], 0, "6/8", 60,
+     ["m.compoundMeter", "m.minorKeys", "p.legato"], 0, "6/8", 90,
      """A4:e | C5:q D5:e E5:e. F5:s E5:e | D5:q B4:e G4:e. A4:s B4:e | C5:q A4:e A4:e. G#4:s A4:e | B4:q G#4:e E4:q A4:e |
         C5:q D5:e E5:e. F5:s E5:e | D5:q B4:e G4:e. A4:s B4:e | C5:e. B4:s A4:e G#4:e. F#4:s G#4:e | A4:q. A4:q. |
         G5:q. G5:e. F#5:s E5:e | D5:q B4:e G4:e. A4:s B4:e | C5:q A4:e A4:e. G#4:s A4:e | B4:q G#4:e E4:q. |

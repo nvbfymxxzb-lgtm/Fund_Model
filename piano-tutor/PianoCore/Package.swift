@@ -15,6 +15,7 @@ let package = Package(
         .target(name: "TheoryKit", dependencies: ["MusicModel", "PracticeEngine"]),
         .target(name: "Curriculum", dependencies: ["MusicModel", "ScoreImport", "PracticeEngine", "Difficulty", "TheoryKit"],
                 resources: [.copy("Content")]),
+        .executableTarget(name: "pianotool", dependencies: ["MusicModel", "ScoreImport", "PracticeEngine", "Difficulty", "Curriculum"]),
         .testTarget(name: "PianoCoreTests",
                     dependencies: ["MusicModel", "ScoreImport", "PracticeEngine", "Difficulty", "TheoryKit", "Curriculum"],
                     resources: [.copy("Fixtures")]),
