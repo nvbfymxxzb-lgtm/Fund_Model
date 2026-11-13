@@ -1,0 +1,176 @@
+{
+  "id": "P4",
+  "track": "pianoTechnique",
+  "order": 4,
+  "title": "Touch, balance and pedal",
+  "summary": "Joining notes, keeping the melody on top, and using the right pedal cleanly.",
+  "lessons": [
+    {
+      "id": "p4.1",
+      "title": "Legato: joining the notes",
+      "summary": "Release each key as the next one goes down.",
+      "minutes": 8,
+      "skillIds": [
+        "p.legato"
+      ],
+      "reviewState": "draft",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Legato means smoothly connected. On the piano you get it by releasing each key at the moment the next key goes down, so the sounds join with no gap and no blur."
+        },
+        {
+          "type": "text",
+          "text": "The app measures this directly: for each pair of notes it compares when you released the first with when you pressed the second. A small overlap is legato. A gap means the notes were detached. A long overlap means two notes were sounding at once."
+        },
+        {
+          "type": "exercise",
+          "exercise": {
+            "id": "ex22",
+            "kind": "playScale",
+            "prompt": "Play C major, right hand, as smoothly as you can. Then read the legato figure in the result.",
+            "scaleTonic": "C",
+            "scaleType": "major",
+            "hand": "right",
+            "octaves": 1
+          }
+        },
+        {
+          "type": "text",
+          "text": "If the result shows gaps, try this: hold each note until you feel the next key reach the bottom, and only then let go. If it shows long overlaps, lift each finger a little sooner."
+        },
+        {
+          "type": "songLink",
+          "songId": "amazing-grace",
+          "text": "Amazing Grace is a good piece for a singing, joined-up melody."
+        }
+      ]
+    },
+    {
+      "id": "p4.2",
+      "title": "Melody over accompaniment",
+      "summary": "Make one hand louder than the other on purpose.",
+      "minutes": 8,
+      "skillIds": [
+        "p.dynamics"
+      ],
+      "reviewState": "draft",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "In most pieces one hand carries the tune and the other supports it. The tune should be clearly louder. This is hard at first because the hands want to do the same thing."
+        },
+        {
+          "type": "text",
+          "text": "Practise it away from a piece. Play the same five notes in both hands, and let the right hand sink into the keys with more arm weight while the left hand stays close to the keys and plays lightly."
+        },
+        {
+          "type": "text",
+          "text": "After you play a piece with both hands, the app shows the balance: the average loudness of the right hand minus the left. For a right-hand tune this should be clearly positive. The number depends on your piano's Key Touch setting, so compare it only with your own earlier results."
+        },
+        {
+          "type": "exercise",
+          "exercise": {
+            "id": "ex23",
+            "kind": "choice",
+            "prompt": "You play a piece where the right hand has the tune. The app reports a balance of −12. What does that mean?",
+            "options": [
+              "The right hand was louder, as it should be",
+              "The left hand was louder than the tune",
+              "You played 12 wrong notes",
+              "The tempo was 12% slow"
+            ],
+            "answer": 1,
+            "explanation": "Balance is right-hand loudness minus left-hand loudness. A negative number means the left hand was louder than the tune, so lighten the left hand."
+          }
+        },
+        {
+          "type": "songLink",
+          "songId": "auld-lang-syne",
+          "text": "In Auld Lang Syne the left-hand broken chords should stay well under the tune."
+        },
+        {
+          "type": "songLink",
+          "songId": "brahms-lullaby",
+          "text": "In the Lullaby the two soft chords in each measure must be quieter than the melody."
+        }
+      ]
+    },
+    {
+      "id": "p4.3",
+      "title": "The right pedal",
+      "summary": "Change the pedal just after the new chord, not before.",
+      "minutes": 8,
+      "skillIds": [
+        "p.pedal"
+      ],
+      "reviewState": "draft",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "The right pedal lifts the dampers so notes keep sounding after you release the keys. It joins chords that the hands cannot join, but if you hold it through a change of chord the two harmonies blur together."
+        },
+        {
+          "type": "text",
+          "text": "The clean way is called legato pedaling. Play the new chord, and at that moment, or a split second after, lift the pedal and press it straight down again. The foot goes up as the hands go down."
+        },
+        {
+          "type": "text",
+          "text": "The common mistake is to lift and press the pedal before the new chord, which leaves a gap in the sound, or not to lift it at all. The app can time your pedal against the chord changes when your pedal is connected."
+        },
+        {
+          "type": "exercise",
+          "exercise": {
+            "id": "ex24",
+            "kind": "choice",
+            "prompt": "When should the pedal come up in legato pedaling?",
+            "options": [
+              "Just before the new chord, to clear the old one",
+              "As the new chord sounds, or just after",
+              "Half-way through the measure",
+              "Never; hold it down"
+            ],
+            "answer": 1,
+            "explanation": "Lift as the new chord sounds and press again straight away. That clears the old harmony while the new one is held by your fingers."
+          }
+        },
+        {
+          "type": "songLink",
+          "songId": "gymnopedie-1",
+          "text": "Gymnopédie No. 1 needs one pedal change on each bass note."
+        }
+      ]
+    },
+    {
+      "id": "p4.4",
+      "title": "How to practise",
+      "summary": "Short loops, slow tempo, and stopping while it is still going well.",
+      "minutes": 6,
+      "skillIds": [
+        "p.practice"
+      ],
+      "reviewState": "draft",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Most progress comes from playing a small passage correctly several times, not from playing a whole piece through with the same mistakes."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Work on two to four measures at a time.",
+            "Learn each hand alone before putting them together.",
+            "Choose a tempo slow enough to play with no mistakes, then raise it in small steps.",
+            "When a spot keeps going wrong, shrink the loop to the two or three notes around it.",
+            "Stop after a good run. End a session on something that worked.",
+            "Come back the next day: what you can still play tomorrow is what you have learned."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "The steps the app gives you for each song follow this pattern. You can skip any step, but the slow steps are where the learning happens."
+        }
+      ]
+    }
+  ]
+}

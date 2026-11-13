@@ -1,0 +1,151 @@
+[
+  {
+    "id": "p.posture",
+    "track": "pianoTechnique",
+    "title": "Sitting and hand shape",
+    "prerequisites": []
+  },
+  {
+    "id": "p.keyboard",
+    "track": "pianoTechnique",
+    "title": "Finding notes on the keyboard",
+    "prerequisites": []
+  },
+  {
+    "id": "p.scales",
+    "track": "pianoTechnique",
+    "title": "Scales and fingering",
+    "prerequisites": [
+      "p.posture"
+    ]
+  },
+  {
+    "id": "p.blockChords",
+    "track": "pianoTechnique",
+    "title": "Playing chords",
+    "prerequisites": [
+      "m.triads"
+    ]
+  },
+  {
+    "id": "p.inversions",
+    "track": "pianoTechnique",
+    "title": "Chord inversions and smooth changes",
+    "prerequisites": [
+      "p.blockChords"
+    ]
+  },
+  {
+    "id": "p.brokenChords",
+    "track": "pianoTechnique",
+    "title": "Broken chords",
+    "prerequisites": [
+      "p.blockChords"
+    ]
+  },
+  {
+    "id": "p.legato",
+    "track": "pianoTechnique",
+    "title": "Legato touch",
+    "prerequisites": [
+      "p.scales"
+    ]
+  },
+  {
+    "id": "p.dynamics",
+    "track": "pianoTechnique",
+    "title": "Loud, soft and balance between the hands",
+    "prerequisites": []
+  },
+  {
+    "id": "p.pedal",
+    "track": "pianoTechnique",
+    "title": "Pedaling",
+    "prerequisites": [
+      "p.legato"
+    ]
+  },
+  {
+    "id": "p.handIndependence",
+    "track": "pianoTechnique",
+    "title": "Independent hands",
+    "prerequisites": [
+      "p.scales"
+    ]
+  },
+  {
+    "id": "p.practice",
+    "track": "pianoTechnique",
+    "title": "How to practise",
+    "prerequisites": []
+  },
+  {
+    "id": "m.rhythm",
+    "track": "musicTheory",
+    "title": "Note values and meter",
+    "prerequisites": []
+  },
+  {
+    "id": "m.compoundMeter",
+    "track": "musicTheory",
+    "title": "Six-eight and other compound meters",
+    "prerequisites": [
+      "m.rhythm"
+    ]
+  },
+  {
+    "id": "m.intervals",
+    "track": "musicTheory",
+    "title": "Intervals",
+    "prerequisites": []
+  },
+  {
+    "id": "m.majorKeys",
+    "track": "musicTheory",
+    "title": "Major scales and key signatures",
+    "prerequisites": [
+      "m.intervals"
+    ]
+  },
+  {
+    "id": "m.minorKeys",
+    "track": "musicTheory",
+    "title": "Minor keys",
+    "prerequisites": [
+      "m.majorKeys"
+    ]
+  },
+  {
+    "id": "m.triads",
+    "track": "musicTheory",
+    "title": "Triads",
+    "prerequisites": [
+      "m.intervals"
+    ]
+  },
+  {
+    "id": "m.seventhChords",
+    "track": "musicTheory",
+    "title": "Seventh chords",
+    "prerequisites": [
+      "m.triads"
+    ]
+  },
+  {
+    "id": "m.roman",
+    "track": "musicTheory",
+    "title": "Chords in a key (Roman numerals)",
+    "prerequisites": [
+      "m.triads",
+      "m.majorKeys"
+    ]
+  },
+  {
+    "id": "m.cadences",
+    "track": "musicTheory",
+    "title": "Cadences and common progressions",
+    "prerequisites": [
+      "m.roman"
+    ]
+  }
+]

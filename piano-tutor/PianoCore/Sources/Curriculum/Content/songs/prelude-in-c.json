@@ -1,0 +1,24 @@
+{
+  "id": "prelude-in-c",
+  "level": 4,
+  "about": "One broken chord per measure, shared between the hands: the left hand plays the first two notes and the right hand answers with three. The aim is a perfectly even stream of notes.",
+  "skillIds": [
+    "p.brokenChords",
+    "p.legato",
+    "m.seventhChords",
+    "m.roman"
+  ],
+  "reviewState": "draft",
+  "rights": "Composition by J. S. Bach (died 1750), public domain. Measures 1–11 with the held notes simplified and a closing chord added for this app.",
+  "source": {
+    "title": "Prelude in C (opening)",
+    "composer": "Johann Sebastian Bach, BWV 846, simplified",
+    "keyFifths": 0,
+    "minor": false,
+    "time": "4/4",
+    "tempo": 60,
+    "pickup": false,
+    "rh": "r:e G4:s C5 E5 G4 C5 E5 r:e G4:s C5 E5 G4 C5 E5 | r:e A4:s D5 F5 A4 D5 F5 r:e A4:s D5 F5 A4 D5 F5 | r:e G4:s D5 F5 G4 D5 F5 r:e G4:s D5 F5 G4 D5 F5 | r:e G4:s C5 E5 G4 C5 E5 r:e G4:s C5 E5 G4 C5 E5 | r:e A4:s E5 A5 A4 E5 A5 r:e A4:s E5 A5 A4 E5 A5 | r:e F#4:s A4 D5 F#4 A4 D5 r:e F#4:s A4 D5 F#4 A4 D5 | r:e G4:s D5 G5 G4 D5 G5 r:e G4:s D5 G5 G4 D5 G5 | r:e E4:s G4 C5 E4 G4 C5 r:e E4:s G4 C5 E4 G4 C5 | r:e E4:s G4 C5 E4 G4 C5 r:e E4:s G4 C5 E4 G4 C5 | r:e D4:s F#4 C5 D4 F#4 C5 r:e D4:s F#4 C5 D4 F#4 C5 | r:e D4:s G4 B4 D4 G4 B4 r:e D4:s G4 B4 D4 G4 B4 | [E4 G4 C5]:w",
+    "lh": "C4:s E4 r:e r:q C4:s E4 r:e r:q | C4:s D4 r:e r:q C4:s D4 r:e r:q | B3:s D4 r:e r:q B3:s D4 r:e r:q | C4:s E4 r:e r:q C4:s E4 r:e r:q | C4:s E4 r:e r:q C4:s E4 r:e r:q | C4:s D4 r:e r:q C4:s D4 r:e r:q | B3:s D4 r:e r:q B3:s D4 r:e r:q | B3:s C4 r:e r:q B3:s C4 r:e r:q | A3:s C4 r:e r:q A3:s C4 r:e r:q | D3:s A3 r:e r:q D3:s A3 r:e r:q | G3:s B3 r:e r:q G3:s B3 r:e r:q | [C3 G3]:w"
+  }
+}

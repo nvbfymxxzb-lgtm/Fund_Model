@@ -1,0 +1,303 @@
+{
+  "id": "P3",
+  "track": "pianoTechnique",
+  "order": 3,
+  "title": "Chords on the keyboard",
+  "summary": "Triad shapes, inversions, and moving between chords with the least motion.",
+  "lessons": [
+    {
+      "id": "p3.1",
+      "title": "Triad shapes",
+      "summary": "Major and minor triads under the hand.",
+      "minutes": 8,
+      "skillIds": [
+        "p.blockChords",
+        "m.triads"
+      ],
+      "reviewState": "draft",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "A triad is a three-note chord built by skipping every other note of the scale: play one, skip one, play one, skip one, play one. With the notes this close together it sits under fingers 1, 3 and 5 of the right hand, or 5, 3 and 1 of the left."
+        },
+        {
+          "type": "chords",
+          "chords": [
+            {
+              "root": "C",
+              "quality": "major",
+              "inversion": 0
+            },
+            {
+              "root": "C",
+              "quality": "minor",
+              "inversion": 0
+            }
+          ],
+          "chordLabels": [
+            "C major",
+            "C minor"
+          ],
+          "text": "The middle note decides major or minor."
+        },
+        {
+          "type": "text",
+          "text": "Press all three keys at exactly the same moment, with a relaxed drop of the arm. Then release and let the hand stay loose."
+        },
+        {
+          "type": "exercise",
+          "exercise": {
+            "id": "ex16",
+            "kind": "playChord",
+            "prompt": "Play a C major chord.",
+            "chord": {
+              "root": "C",
+              "quality": "major",
+              "inversion": 0
+            },
+            "requireInversion": false
+          }
+        },
+        {
+          "type": "exercise",
+          "exercise": {
+            "id": "ex17",
+            "kind": "playChord",
+            "prompt": "Play an A minor chord.",
+            "chord": {
+              "root": "A",
+              "quality": "minor",
+              "inversion": 0
+            },
+            "requireInversion": false
+          }
+        },
+        {
+          "type": "generated",
+          "generator": {
+            "kind": "chordPlay",
+            "count": 6,
+            "keys": [
+              "C",
+              "F",
+              "G",
+              "D",
+              "A",
+              "E"
+            ],
+            "qualities": [
+              "major",
+              "minor"
+            ]
+          },
+          "text": "Now play each chord the app asks for. Any octave is fine."
+        }
+      ]
+    },
+    {
+      "id": "p3.2",
+      "title": "Inversions",
+      "summary": "The same three notes with a different one at the bottom.",
+      "minutes": 10,
+      "skillIds": [
+        "p.inversions",
+        "m.triads"
+      ],
+      "reviewState": "draft",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "You can play the notes of a chord in any order. When the root is at the bottom the chord is in root position. Move the bottom note up an octave and you get the first inversion; do it again for the second inversion."
+        },
+        {
+          "type": "chords",
+          "chords": [
+            {
+              "root": "C",
+              "quality": "major",
+              "inversion": 0
+            },
+            {
+              "root": "C",
+              "quality": "major",
+              "inversion": 1
+            },
+            {
+              "root": "C",
+              "quality": "major",
+              "inversion": 2
+            }
+          ],
+          "chordLabels": [
+            "root position",
+            "first inversion",
+            "second inversion"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Usual right-hand fingerings are 1 3 5 for root position, 1 2 5 for first inversion and 1 3 5 for second inversion. Let your hand choose what is comfortable; the app does not know which fingers you use."
+        },
+        {
+          "type": "exercise",
+          "exercise": {
+            "id": "ex18",
+            "kind": "playChord",
+            "prompt": "Play C major in first inversion: E at the bottom.",
+            "chord": {
+              "root": "C",
+              "quality": "major",
+              "inversion": 1
+            },
+            "requireInversion": true
+          }
+        },
+        {
+          "type": "exercise",
+          "exercise": {
+            "id": "ex19",
+            "kind": "playChord",
+            "prompt": "Play C major in second inversion: G at the bottom.",
+            "chord": {
+              "root": "C",
+              "quality": "major",
+              "inversion": 2
+            },
+            "requireInversion": true
+          }
+        },
+        {
+          "type": "exercise",
+          "exercise": {
+            "id": "ex20",
+            "kind": "playChord",
+            "prompt": "Play F major in second inversion: C at the bottom.",
+            "chord": {
+              "root": "F",
+              "quality": "major",
+              "inversion": 2
+            },
+            "requireInversion": true
+          }
+        },
+        {
+          "type": "generated",
+          "generator": {
+            "kind": "chordPlay",
+            "count": 6,
+            "keys": [
+              "C",
+              "F",
+              "G"
+            ],
+            "qualities": [
+              "major"
+            ],
+            "inversions": true
+          },
+          "text": "Play each chord with the named note at the bottom."
+        }
+      ]
+    },
+    {
+      "id": "p3.3",
+      "title": "Changing chords smoothly",
+      "summary": "Use inversions so the hand hardly moves.",
+      "minutes": 10,
+      "skillIds": [
+        "p.inversions",
+        "m.roman"
+      ],
+      "reviewState": "draft",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "If you play C, F and G all in root position, the hand has to jump. Use inversions instead and the chords sit right next to each other: notes that two chords share stay where they are, and the other fingers move by a step."
+        },
+        {
+          "type": "chords",
+          "chords": [
+            {
+              "root": "C",
+              "quality": "major",
+              "inversion": 0
+            },
+            {
+              "root": "F",
+              "quality": "major",
+              "inversion": 2
+            },
+            {
+              "root": "G",
+              "quality": "major",
+              "inversion": 1
+            },
+            {
+              "root": "C",
+              "quality": "major",
+              "inversion": 0
+            }
+          ],
+          "chordLabels": [
+            "C",
+            "F (C at the bottom)",
+            "G (B at the bottom)",
+            "C"
+          ],
+          "text": "From C to F the bottom note C stays. From C to G the top note G stays."
+        },
+        {
+          "type": "exercise",
+          "exercise": {
+            "id": "ex21",
+            "kind": "playProgression",
+            "prompt": "Play C, then F with C at the bottom, then G with B at the bottom, then C again.",
+            "chords": [
+              {
+                "root": "C",
+                "quality": "major",
+                "inversion": 0
+              },
+              {
+                "root": "F",
+                "quality": "major",
+                "inversion": 2
+              },
+              {
+                "root": "G",
+                "quality": "major",
+                "inversion": 1
+              },
+              {
+                "root": "C",
+                "quality": "major",
+                "inversion": 0
+              }
+            ],
+            "labels": [
+              "C",
+              "F/C",
+              "G/B",
+              "C"
+            ],
+            "explanation": "These are the three main chords of C major, played without moving the hand away."
+          }
+        },
+        {
+          "type": "text",
+          "text": "Before each change, look for the note the two chords share and keep that finger down."
+        },
+        {
+          "type": "songLink",
+          "songId": "when-the-saints",
+          "text": "When the Saints uses exactly these three shapes in the left hand."
+        },
+        {
+          "type": "songLink",
+          "songId": "ode-to-joy",
+          "text": "Ode to Joy moves between C and G with B at the bottom."
+        }
+      ]
+    }
+  ]
+}

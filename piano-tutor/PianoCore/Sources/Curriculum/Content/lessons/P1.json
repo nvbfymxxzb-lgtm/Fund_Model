@@ -1,0 +1,165 @@
+{
+  "id": "P1",
+  "track": "pianoTechnique",
+  "order": 1,
+  "title": "Setting up",
+  "summary": "How to sit, how to hold your hands, and how to find your way around the keys.",
+  "lessons": [
+    {
+      "id": "p1.1",
+      "title": "Sitting and hand shape",
+      "summary": "A comfortable position you can keep without strain.",
+      "minutes": 6,
+      "skillIds": [
+        "p.posture"
+      ],
+      "reviewState": "draft",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Good technique starts before you play a note. The aim is simple: nothing should feel tight or held. If something hurts while you play, stop and rest."
+        },
+        {
+          "type": "text",
+          "text": "The app listens to which keys you press, how hard and when. It cannot see your hands, so the points in this lesson are for you to check yourself."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Sit on the front half of the bench, feet flat on the floor.",
+            "Sit far enough back that your elbows are slightly in front of your body, not pinned to your sides.",
+            "Adjust the bench height so your forearms are about level with the keys.",
+            "Let your shoulders drop. Check them again after a minute of playing.",
+            "Let your fingers curve naturally, as if holding a small ball. The thumb rests on its side corner.",
+            "Keep the wrist level with the hand: not sagging below the keys and not arched high."
+          ],
+          "text": "Check each point at your piano:"
+        },
+        {
+          "type": "text",
+          "text": "Play from the weight of your arm rather than by pressing hard with the fingers alone. A relaxed arm gives a fuller sound for less effort."
+        },
+        {
+          "type": "exercise",
+          "exercise": {
+            "id": "ex1",
+            "kind": "choice",
+            "prompt": "Something starts to ache in your forearm during practice. What should you do?",
+            "options": [
+              "Push through; it will loosen up",
+              "Stop, rest, and check your position before continuing",
+              "Play louder to build strength",
+              "Lower the bench as far as it goes"
+            ],
+            "answer": 1,
+            "explanation": "Pain is a signal to stop. Rest, then check your seat height, shoulders and wrists. If it keeps happening, ask a teacher or a doctor."
+          }
+        },
+        {
+          "type": "text",
+          "text": "The app cannot check any of this for you. Recording a short video of yourself from the side, or a single lesson with a teacher, is the best way to check your position."
+        }
+      ]
+    },
+    {
+      "id": "p1.2",
+      "title": "Finding your way around the keys",
+      "summary": "Use the black keys as landmarks.",
+      "minutes": 6,
+      "skillIds": [
+        "p.keyboard"
+      ],
+      "reviewState": "draft",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "The black keys come in groups of two and three. Every C sits just left of a group of two black keys, and every F sits just left of a group of three."
+        },
+        {
+          "type": "keyboard",
+          "keys": [
+            60,
+            65
+          ],
+          "labels": [
+            "C",
+            "F"
+          ],
+          "text": "Middle C, and the F above it."
+        },
+        {
+          "type": "text",
+          "text": "From one key to the very next key, black or white, is a half step. Two half steps make a whole step."
+        },
+        {
+          "type": "keyboard",
+          "keys": [
+            60,
+            61,
+            62
+          ],
+          "labels": [
+            "C",
+            "C♯",
+            "D"
+          ],
+          "text": "C to C♯ is a half step. C to D is a whole step."
+        },
+        {
+          "type": "exercise",
+          "exercise": {
+            "id": "ex2",
+            "kind": "choice",
+            "prompt": "Which white key sits just left of a group of three black keys?",
+            "options": [
+              "C",
+              "E",
+              "F",
+              "B"
+            ],
+            "answer": 2,
+            "explanation": "F is left of the three black keys; C is left of the two."
+          }
+        },
+        {
+          "type": "exercise",
+          "exercise": {
+            "id": "ex3",
+            "kind": "choice",
+            "prompt": "How many half steps are there from E up to F?",
+            "options": [
+              "One",
+              "Two",
+              "Three",
+              "None"
+            ],
+            "answer": 0,
+            "explanation": "E and F are next-door white keys with no black key between them: one half step."
+          }
+        },
+        {
+          "type": "exercise",
+          "exercise": {
+            "id": "ex4",
+            "kind": "playInterval",
+            "prompt": "Play the note a whole step above D4 (the D next to middle C).",
+            "rootMidi": 62,
+            "semitones": 2,
+            "explanation": "A whole step above D is E."
+          }
+        },
+        {
+          "type": "exercise",
+          "exercise": {
+            "id": "ex5",
+            "kind": "playInterval",
+            "prompt": "Play the note a half step above E4.",
+            "rootMidi": 64,
+            "semitones": 1,
+            "explanation": "A half step above E is F."
+          }
+        }
+      ]
+    }
+  ]
+}

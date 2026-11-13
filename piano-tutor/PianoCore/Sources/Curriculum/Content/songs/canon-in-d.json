@@ -1,0 +1,23 @@
+{
+  "id": "canon-in-d",
+  "level": 2,
+  "about": "Eight chords that repeat while the melody changes above them. The left hand walks the bass in half notes; the last section moves the right hand in quarters.",
+  "skillIds": [
+    "m.roman",
+    "m.majorKeys",
+    "p.handIndependence"
+  ],
+  "reviewState": "draft",
+  "rights": "Composition by Pachelbel (died 1706), public domain. Simplified arrangement written for this app.",
+  "source": {
+    "title": "Canon in D (theme)",
+    "composer": "Johann Pachelbel, arr.",
+    "keyFifths": 2,
+    "minor": false,
+    "time": "4/4",
+    "tempo": 72,
+    "pickup": false,
+    "rh": "F#5:h E5 | D5:h C#5 | B4:h A4 | B4:h C#5 | D5:h C#5 | B4:h A4 | G4:h F#4 | G4:h E4 | F#5:q D5 E5 C#5 | D5 B4 C#5 A4 | B4 G4 A4 F#4 | G4 B4 A4 C#5 | D5:w",
+    "lh": "D3:h A2 | B2:h F#2 | G2:h D3 | G2:h A2 | D3:h A2 | B2:h F#2 | G2:h D3 | G2:h A2 | D3:h A2 | B2:h F#2 | G2:h D3 | G2:h A2 | [D3 A3]:w"
+  }
+}

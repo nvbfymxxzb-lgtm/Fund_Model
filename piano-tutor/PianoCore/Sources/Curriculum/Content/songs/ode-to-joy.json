@@ -1,0 +1,23 @@
+{
+  "id": "ode-to-joy",
+  "level": 1,
+  "about": "The melody stays under five fingers while the left hand holds three-note chords. A good first piece for changing chords smoothly: C in root position and G with B at the bottom.",
+  "skillIds": [
+    "p.blockChords",
+    "p.inversions",
+    "m.roman"
+  ],
+  "reviewState": "draft",
+  "rights": "Melody by Beethoven (died 1827), public domain. Arrangement written for this app.",
+  "source": {
+    "title": "Ode to Joy",
+    "composer": "Ludwig van Beethoven, arr.",
+    "keyFifths": 0,
+    "minor": false,
+    "time": "4/4",
+    "tempo": 100,
+    "pickup": false,
+    "rh": "E4:q E4 F4 G4 | G4 F4 E4 D4 | C4 C4 D4 E4 | E4:q. D4:e D4:h | E4:q E4 F4 G4 | G4 F4 E4 D4 | C4 C4 D4 E4 | D4:q. C4:e C4:h | D4:q D4 E4 C4 | D4 E4:e F4 E4:q C4 | D4 E4:e F4 E4:q D4 | C4 D4 G3:h | E4:q E4 F4 G4 | G4 F4 E4 D4 | C4 C4 D4 E4 | D4:q. C4:e C4:h",
+    "lh": "[C3 E3 G3]:w | [B2 D3 G3]:w | [C3 E3 G3]:w | [C3 E3 G3]:h [B2 D3 G3]:h | [C3 E3 G3]:w | [B2 D3 G3]:w | [C3 E3 G3]:w | [B2 D3 G3]:h [C3 E3 G3]:h | [B2 D3 G3]:h [C3 E3 G3]:h | [B2 D3 G3]:h [C3 E3 G3]:h | [B2 D3 G3]:h [C3 E3 G3]:h | [C3 E3 G3]:h [B2 D3 G3]:h | [C3 E3 G3]:w | [B2 D3 G3]:w | [C3 E3 G3]:w | [B2 D3 G3]:h [C3 E3 G3]:h"
+  }
+}

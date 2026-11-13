@@ -1,0 +1,158 @@
+{
+  "id": "M2",
+  "track": "musicTheory",
+  "order": 2,
+  "title": "Intervals",
+  "summary": "The distance between two notes, by name and by ear.",
+  "lessons": [
+    {
+      "id": "m2.1",
+      "title": "Naming intervals",
+      "summary": "Count the letter names, then count the half steps.",
+      "minutes": 10,
+      "skillIds": [
+        "m.intervals"
+      ],
+      "reviewState": "draft",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "An interval is the distance from one note to another. Its number comes from counting letter names, including both ends: C up to E is C, D, E, so it is a third. C up to G is a fifth."
+        },
+        {
+          "type": "text",
+          "text": "The number alone is not enough, because thirds come in two sizes. Count half steps to find the quality. A major third is four half steps; a minor third is three. A perfect fifth is seven half steps; a perfect fourth is five."
+        },
+        {
+          "type": "keyboard",
+          "keys": [
+            60,
+            64,
+            67
+          ],
+          "labels": [
+            "C",
+            "E",
+            "G"
+          ],
+          "text": "C to E is a major third. C to G is a perfect fifth."
+        },
+        {
+          "type": "exercise",
+          "exercise": {
+            "id": "ex30",
+            "kind": "choice",
+            "prompt": "What is the interval from C up to E?",
+            "options": [
+              "Major second",
+              "Minor third",
+              "Major third",
+              "Perfect fourth"
+            ],
+            "answer": 2,
+            "explanation": "Three letter names (C, D, E) and four half steps: a major third."
+          }
+        },
+        {
+          "type": "exercise",
+          "exercise": {
+            "id": "ex31",
+            "kind": "choice",
+            "prompt": "How many half steps are in a perfect fifth?",
+            "options": [
+              "Five",
+              "Six",
+              "Seven",
+              "Eight"
+            ],
+            "answer": 2,
+            "explanation": "Seven half steps, for example C up to G."
+          }
+        },
+        {
+          "type": "generated",
+          "generator": {
+            "kind": "intervalName",
+            "count": 6,
+            "semitones": [
+              2,
+              3,
+              4,
+              5,
+              7,
+              12
+            ]
+          },
+          "text": "Name each interval."
+        },
+        {
+          "type": "generated",
+          "generator": {
+            "kind": "intervalPlay",
+            "count": 5,
+            "semitones": [
+              2,
+              3,
+              4,
+              5,
+              7
+            ]
+          },
+          "text": "Now play the note the app asks for."
+        }
+      ]
+    },
+    {
+      "id": "m2.2",
+      "title": "Hearing intervals",
+      "summary": "Tell a third from a fifth by sound.",
+      "minutes": 8,
+      "skillIds": [
+        "m.intervals"
+      ],
+      "reviewState": "draft",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Each interval has its own sound. A major third sounds bright and settled, like the start of a major chord. A minor third sounds darker. A perfect fifth sounds open and hollow. An octave sounds like the same note, higher."
+        },
+        {
+          "type": "text",
+          "text": "The app plays two notes, one after the other and then together. Choose the interval you hear. You can listen as many times as you like."
+        },
+        {
+          "type": "generated",
+          "generator": {
+            "kind": "earInterval",
+            "count": 8,
+            "semitones": [
+              3,
+              4,
+              7,
+              12
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "When you can tell these four apart reliably, the next step is to add the perfect fourth and the major second."
+        },
+        {
+          "type": "generated",
+          "generator": {
+            "kind": "earInterval",
+            "count": 8,
+            "semitones": [
+              2,
+              3,
+              4,
+              5,
+              7,
+              12
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

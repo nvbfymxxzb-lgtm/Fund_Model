@@ -1,0 +1,24 @@
+{
+  "id": "when-the-saints",
+  "level": 1,
+  "about": "Three chords, C, F and G, played close together so the left hand barely moves. The tune starts before the first full measure (a pickup).",
+  "skillIds": [
+    "p.blockChords",
+    "p.inversions",
+    "m.roman",
+    "m.rhythm"
+  ],
+  "reviewState": "draft",
+  "rights": "Traditional tune, public domain. Arrangement written for this app.",
+  "source": {
+    "title": "When the Saints Go Marching In",
+    "composer": "Traditional, arr.",
+    "keyFifths": 0,
+    "minor": false,
+    "time": "4/4",
+    "tempo": 112,
+    "pickup": true,
+    "rh": "C4:q E4 F4 | G4:w | r:q C4 E4 F4 | G4:w | r:q C4 E4 F4 | G4:h E4 | C4:h E4 | D4:w | r:q E4 E4 D4 | C4:h. C4:q | E4:h G4 | G4:h F4~ | F4:h E4:q F4 | G4:h E4 | C4:h D4 | C4:w",
+    "lh": "r:h. | [C3 E3 G3]:w | [C3 E3 G3]:w | [C3 E3 G3]:w | [C3 E3 G3]:w | [C3 E3 G3]:w | [C3 E3 G3]:w | [B2 D3 G3]:w | [B2 D3 G3]:w | [C3 E3 G3]:w | [C3 E3 G3]:w | [C3 F3 A3]:w | [C3 F3 A3]:w | [C3 E3 G3]:w | [C3 E3 G3]:h [B2 D3 G3]:h | [C3 E3 G3]:w"
+  }
+}

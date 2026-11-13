@@ -1,0 +1,25 @@
+{
+  "id": "gymnopedie-1",
+  "level": 4,
+  "about": "The left hand leaps from a low bass note to a chord in every measure, so use the pedal to join them: change it on each bass note. The melody floats slowly on top.",
+  "skillIds": [
+    "p.pedal",
+    "p.handIndependence",
+    "p.dynamics",
+    "m.seventhChords"
+  ],
+  "reviewState": "draft",
+  "rights": "Composition by Satie (died 1925), public domain in most countries: check your own. First 12 measures written out from memory for this app.",
+  "source": {
+    "title": "Gymnopédie No. 1 (opening)",
+    "composer": "Erik Satie",
+    "keyFifths": 2,
+    "minor": false,
+    "time": "3/4",
+    "tempo": 72,
+    "pickup": false,
+    "rh": "r:h. | r:h. | r:h. | r:h. | r:q F#5:q A5 | G5:q F#5 C#5 | B4:q C#5 D5 | A4:h. | F#4:h.~ | F#4:h.~ | F#4:h.~ | F#4:h.",
+    "lh": "G2:h. | D2:h. | G2:h. | D2:h. | G2:h. | D2:h. | G2:h. | D2:h. | G2:h. | D2:h. | G2:h. | D2:h.",
+    "lh2": "r:q [B3 D4 F#4]:h | r:q [A3 C#4 F#4]:h | r:q [B3 D4 F#4]:h | r:q [A3 C#4 F#4]:h | r:q [B3 D4 F#4]:h | r:q [A3 C#4 F#4]:h | r:q [B3 D4 F#4]:h | r:q [A3 C#4 F#4]:h | r:q [B3 D4 F#4]:h | r:q [A3 C#4 F#4]:h | r:q [B3 D4 F#4]:h | r:q [A3 C#4 F#4]:h"
+  }
+}
