@@ -97,6 +97,8 @@ struct NotationSnippet: View {
     var height: CGFloat = 190
     @StateObject private var controller = NotationController()
 
+    init(xml: String, height: CGFloat = 190) { self.xml = xml; self.height = height }
+
     var body: some View {
         NotationView(controller: controller)
             .frame(height: height)

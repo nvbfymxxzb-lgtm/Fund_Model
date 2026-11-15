@@ -110,7 +110,7 @@ struct PracticeView: View {
                 Text("Speed \(model.tempoPercent)%").monospacedDigit()
             }
             .frame(width: 220)
-            .disabled(model.mode == .wait && model.phase != .demo)
+            .disabled(model.phase == .playing || model.phase == .countIn)
 
             Spacer(minLength: 0)
 

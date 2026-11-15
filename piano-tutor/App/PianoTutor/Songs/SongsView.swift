@@ -92,6 +92,8 @@ struct SongRow: View {
     let song: SongEntry
     let highlight: Bool
 
+    init(song: SongEntry, highlight: Bool) { self.song = song; self.highlight = highlight }
+
     var body: some View {
         let progress = app.songProgress(song.id)
         let fraction = progress.fraction(of: song.steps)
@@ -127,6 +129,8 @@ struct SongRow: View {
 struct SongDetailView: View {
     @EnvironmentObject private var app: AppModel
     let song: SongEntry
+
+    init(song: SongEntry) { self.song = song }
 
     var body: some View {
         let progress = app.songProgress(song.id)

@@ -95,6 +95,11 @@ public struct Suggestion: Codable, Hashable, Sendable {
     public var firstMeasure: Int?
     public var lastMeasure: Int?
     public var hand: HandSelection?
+
+    public init(action: Action, message: String, tempoPercent: Int? = nil, firstMeasure: Int? = nil, lastMeasure: Int? = nil, hand: HandSelection? = nil) {
+        self.action = action; self.message = message; self.tempoPercent = tempoPercent
+        self.firstMeasure = firstMeasure; self.lastMeasure = lastMeasure; self.hand = hand
+    }
 }
 
 /// Tracks a run of attempts on one passage and decides what to suggest next.

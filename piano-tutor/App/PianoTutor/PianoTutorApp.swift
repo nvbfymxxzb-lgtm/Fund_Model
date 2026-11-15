@@ -32,6 +32,8 @@ struct WelcomeView: View {
     @EnvironmentObject private var app: AppModel
     let done: () -> Void
 
+    init(done: @escaping () -> Void) { self.done = done }
+
     var body: some View {
         NavigationStack {
             ScrollView {

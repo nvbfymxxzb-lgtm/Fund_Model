@@ -41,6 +41,8 @@ struct LessonRow: View {
     @EnvironmentObject private var app: AppModel
     let lesson: Lesson
 
+    init(lesson: Lesson) { self.lesson = lesson }
+
     var body: some View {
         let done = app.progress.lessons[lesson.id]?.completed ?? false
         let missing = lesson.skillIds.flatMap { app.pack.skill($0)?.prerequisites ?? [] }
@@ -74,6 +76,8 @@ struct LessonView: View {
     let lesson: Lesson
     /// Block index → share of questions answered right first time.
     @State private var results: [Int: Double] = [:]
+
+    init(lesson: Lesson) { self.lesson = lesson }
 
     private func needsPiano(_ block: LessonBlock) -> Bool {
         if let e = block.exercise { return e.usesPiano && e.kind != .playScale }
