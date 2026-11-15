@@ -5,7 +5,7 @@ let package = Package(
     name: "PianoCore",
     platforms: [.iOS(.v17), .macOS(.v14)],
     products: [
-        .library(name: "PianoCore", targets: ["MusicModel", "ScoreImport", "PracticeEngine", "Difficulty", "TheoryKit", "Curriculum"]),
+        .library(name: "PianoCore", targets: ["PianoCore"]),
     ],
     targets: [
         .target(name: "MusicModel"),
@@ -15,6 +15,7 @@ let package = Package(
         .target(name: "TheoryKit", dependencies: ["MusicModel", "PracticeEngine"]),
         .target(name: "Curriculum", dependencies: ["MusicModel", "ScoreImport", "PracticeEngine", "Difficulty", "TheoryKit"],
                 resources: [.copy("Content")]),
+        .target(name: "PianoCore", dependencies: ["MusicModel", "ScoreImport", "PracticeEngine", "Difficulty", "TheoryKit", "Curriculum"]),
         .executableTarget(name: "pianotool", dependencies: ["MusicModel", "ScoreImport", "PracticeEngine", "Difficulty", "Curriculum"]),
         .testTarget(name: "PianoCoreTests",
                     dependencies: ["MusicModel", "ScoreImport", "PracticeEngine", "Difficulty", "TheoryKit", "Curriculum"],
