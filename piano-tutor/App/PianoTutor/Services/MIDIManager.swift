@@ -113,14 +113,16 @@ final class MIDIManager: ObservableObject {
 
     private func send(status: UInt8, data1: UInt8, data2: UInt8) {
         guard canSend else { return }
-        let word = UInt32(0x2000_0000) | (UInt32(status) << 16) | (UInt32(data1) << 8) | UInt32(data2)
-        var list = MIDIEventList()
-        let packet = MIDIEventListInit(&list, ._1_0)
-        var words = [word]
-        _ = MIDIEventListAdd(&list, MemoryLayout<MIDIEventList>.size, packet, 0, 1, &words)
+        var word = UInt32(0x2000_0000) | (UInt32(status) << 16) | (UInt32(data1) << 8) | UInt32(data2)
+        let size = MemoryLayout<MIDIEventList>.size
+        let buffer = UnsafeMutableRawPointer.allocate(byteCount: size, alignment: MemoryLayout<MIDIEventList>.alignment)
+        defer { buffer.deallocate() }
+        let list = buffer.bindMemory(to: MIDIEventList.self, capacity: 1)
+        let packet = MIDIEventListInit(list, ._1_0)
+        _ = MIDIEventListAdd(list, size, packet, 0, 1, &word)
         for i in 0..<MIDIGetNumberOfDestinations() {
             let endpoint = MIDIGetDestination(i)
-            if endpoint != 0 { MIDISendEventList(outputPort, endpoint, &list) }
+            if endpoint != 0 && !isOffline(endpoint) { MIDISendEventList(outputPort, endpoint, list) }
         }
     }
 

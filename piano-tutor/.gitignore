@@ -6,3 +6,5 @@ xcuserdata/
 node_modules/
 .DS_Store
 .scratch/
+PianoTutor.xcodeproj/
+App/PianoTutor/Info.plist
